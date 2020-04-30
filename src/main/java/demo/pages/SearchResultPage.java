@@ -1,26 +1,10 @@
 package demo.pages;
-
-import demo.driver.AndroidDriverInstance;
+import demo.driver.WebDriverInstance;
 import org.openqa.selenium.By;
 
 public class SearchResultPage {
 
-    public void clickResultPikachu(){
-        AndroidDriverInstance.androidDriver.findElement(By.xpath("//h3[contains(text(),'Pikachu - Wikipedia bahasa Indonesia, ensiklopedia')]")).click();
+    public void FirstResult(){
+        WebDriverInstance.driver.findElement(By.xpath("//body[@id='gsr']/div[@id='main']/div[@id='cnt']/div[@class='mw']/div[@id='rcnt']/div[@class='col']/div[@id='center_col']/div[@id='res']/div[@id='search']/div/div[@id='rso']/div[1]/div[1]/div[1]/a[1]")).click();
     }
-
-    public void clickResultCharizard(){
-        AndroidDriverInstance.androidDriver.findElement(By.xpath("//h3[contains(text(),'Charizard - Wikipedia bahasa Indonesia, ensiklopedia')]")).click();
-    }
-
-    public void clickResultBulbasaur(){
-        AndroidDriverInstance.androidDriver.findElement(By.xpath("//h3[contains(text(),'Bulbasaur - Wikipedia bahasa Indonesia, ensiklopedia')]")).click();
-    }
-
-    public void clickResultMewTwo(){
-        AndroidDriverInstance.androidDriver.findElement(By.xpath("//h3[contains(text(),'MewTwo - Wikipedia bahasa Indonesia, ensiklopedia')]")).click();
-
-    }
-
 }
-
