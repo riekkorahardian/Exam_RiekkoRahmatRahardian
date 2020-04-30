@@ -1,6 +1,6 @@
 @Web
 Feature: Web to search Pokemon
-
+  @Pikachu
   Scenario: Search a pokemon with name "Pikachu" on google
     Given User open "pikachu" API page
     And User get pikachu Name on API page
@@ -11,6 +11,7 @@ Feature: Web to search Pokemon
     Then User see pokemon Name on Wikipedia page
     And User see pokemon Number on Wikipedia page
 
+  @Charizard
   Scenario: Search a pokemon with name "Charizard" on google
     Given User open "charizard" API page
     And User get charizard Name on API page
@@ -21,6 +22,7 @@ Feature: Web to search Pokemon
     Then User see pokemon Name on Wikipedia page
     And User see pokemon Number on Wikipedia page
 
+  @Bulbasaur
   Scenario: Search a pokemon with name "Bulbasaur" on google
     Given User open "bulbasaur" API page
     And User get bulbasaur Name on API page
@@ -31,6 +33,7 @@ Feature: Web to search Pokemon
     Then User see pokemon Name on Wikipedia page
     And User see pokemon Number on Wikipedia page
 
+  @mewtwo
   Scenario: Search a pokemon with name "Mewtwo" on google
     Given User open "mewtwo" API page
     And User get mewtwo Name on API page
