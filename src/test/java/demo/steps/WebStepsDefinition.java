@@ -41,6 +41,7 @@ public class WebStepsDefinition {
 
     @Given("User open google.com")
     public void userOpenGoogleCom() {
+        googleHomepage.openHomePage();
     }
 
 
